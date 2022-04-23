@@ -10,3 +10,5 @@ A flask app for storing data from dota community mods
 - I use PyCharm Community, which can easily be installed using the [jetbrains toolbox](https://www.jetbrains.com/toolbox-app/)
 - Change your project interpreter to use the venv
   - On the bottom right, add interpreter and select your venv the path should look like: `[path-to-project]/dotadata/dotadata/bin/python`
+### Developer Help
+- Running pre-commit hooks without git `pre-commit run --all-files`
