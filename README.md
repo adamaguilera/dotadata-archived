@@ -3,7 +3,7 @@ A flask app for storing data from dota community mods
 
 ## Setup
 ### venv
-- Create a virtual environment using `python3 -m venv dotadata `
+- Create a virtual environment using `python3 -m venv dotadata`
 - Activate venv using `source ./dotadata/bin/activate`
 - Install dependencies in venv using `python3 -m pip install -r requirements.txt`
 ### Pycharm Setup
@@ -11,4 +11,7 @@ A flask app for storing data from dota community mods
 - Change your project interpreter to use the venv
   - On the bottom right, add interpreter and select your venv the path should look like: `[path-to-project]/dotadata/dotadata/bin/python`
 ### Developer Help
-- Running pre-commit hooks without git `pre-commit run --all-files`
+Running pre-commit hooks without git
+`pre-commit run --all-files`
+### Local development
+You must insert AWS access keys from `dotadata-user` into the .env file
