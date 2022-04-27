@@ -12,6 +12,7 @@ def map_dota2v2_post_game(request: dict) -> Dota2v2PostGame:
     if not request:
         raise NotImplementedError('PostGame cannot be null!')
     match_id = request['match_id']
+    source = request['source']
     players = map_dota_players(request['players'])
     winner = map_dota_team(request['winner'])
     winner_reason = map_dota2v2_win_condition(request['winner_reason'])
@@ -21,6 +22,7 @@ def map_dota2v2_post_game(request: dict) -> Dota2v2PostGame:
         raise NotImplementedError('Match id is a required field!')
     return Dota2v2PostGame(
         match_id=match_id,
+        source=source,
         players=players,
         winner=winner,
         winner_reason=winner_reason,

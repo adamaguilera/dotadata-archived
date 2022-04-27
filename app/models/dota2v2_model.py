@@ -36,6 +36,7 @@ class Dota2v2WinCondition(Enum):
 class Dota2v2PostGame(Model):
     Meta = get_table_meta(game=game, name='post-game')
     match_id = UnicodeAttribute(hash_key=True)
+    source = UnicodeAttribute()
     players = ListAttribute(of=DotaPlayerStats)
     winner = UnicodeEnumAttribute(enum_type=DotaTeams)
     winner_reason = UnicodeEnumAttribute(enum_type=Dota2v2WinCondition)

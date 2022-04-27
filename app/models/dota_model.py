@@ -33,7 +33,7 @@ class DotaPlayerStats(MapAttribute):
     hero_id = NumberAttribute()
     hero_name = UnicodeAttribute()
     team = UnicodeEnumAttribute(enum_type=DotaTeams)
-    damage = NumberAttribute()
+    damage_dealt = NumberAttribute()
     damage_taken = NumberAttribute()
     gold = NumberAttribute()
     kills = NumberAttribute()

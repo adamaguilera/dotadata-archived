@@ -1,4 +1,4 @@
-from app.app import AWS_SECRET_ACCESS_KEY, AWS_ACCESS_KEY, ENV
+from app.env import AWS_SECRET_ACCESS_KEY, AWS_ACCESS_KEY, ENV
 
 
 def get_table_meta(game: str, name: str):
